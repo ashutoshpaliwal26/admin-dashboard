@@ -15,7 +15,7 @@ import Login from './pages/auth/Login';
 import SignUp from './pages/auth/SignUp';
 
 // Mock authentication state
-const isAuthenticated = false;
+const isAuthenticated = true;
 
 function App() {
   return (
