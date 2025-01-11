@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: rgb(147, 51, 234);
+  --background-color: #070B16;
+  --card-color: #0F1631;
+}
+
+body {
+  @apply bg-[var(--background-color)] text-white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
+
+.loading {
+  @apply relative;
+}
+
+.loading::after {
+  content: '';
+  @apply absolute inset-0 bg-gray-800/50 flex items-center justify-center;
+}
+
+.loading::before {
+  content: '';
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 border-4 border-purple-600 border-t-transparent rounded-full animate-spin z-10;
+}
