@@ -46,15 +46,6 @@ A modern, high-performance **Admin Panel Dashboard** built with **Vite** and **R
    npm run build
    ```
 
-## ⚙️ Environment Variables
-
-Create a `.env` file in the root directory and add the following variables:
-
-```env
-VITE_API_URL=your_api_endpoint
-VITE_FIREBASE_API_KEY=your_firebase_api_key
-```
-
 
 ## 🛠️ Customization
 
